@@ -19,9 +19,8 @@ public class CollectItems : MonoBehaviour
     {
         if (other.gameObject.tag == "Collectable")
         {
-
-        collectedItems++;
-        Destroy(other.gameObject);
+            collectedItems++;
+            Destroy(other.gameObject);
         }
     }
 }

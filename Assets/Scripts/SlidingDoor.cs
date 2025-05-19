@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SlidingDoor : MonoBehaviour
 {
-
+    public bool isAutoOpen = false;
     public Vector3 positionOffset = new Vector3(0f, -2f, 0f);
     private Vector3 openPosition;
 
@@ -21,6 +21,10 @@ public class SlidingDoor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //OpenTheDoor();
+        if(isAutoOpen)
+        {
+            OpenTheDoor();
+        }
+        
     }
 }
